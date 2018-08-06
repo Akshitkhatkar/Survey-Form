@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ruslan+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+  <title>Survey Form</title>
+  <style>
+  #head1{
+   background-color:black;
+   margin:-10px -10px -10px -10px;
+   padding:20px 20px 20px 20px;
+  }
+  body{
+      background-color:rgb(163, 209, 169);
+  }
+  #title{
+      text-align:center;
+	  font-family: 'Hanalei Fill', cursive;
+	  font-size:44px;
+  }
+  #back{
+    background-color:white;
+	margin:30px 280px 120px 280px;
+	padding:0px 30px 130px 30px;
+  }
+  h1{
+    text-align:center;
+	padding:30px 30px 30px 30px;
+	font-family: 'Ruslan Display', cursive;
+  }
+  #survey-form{
+    font-family: 'Bitter', serif;
+	font-size:16px;
+    
+  }
+  #red1{
+    color:red;
+  }
+  #name,#email,#number,#dropdown {
+    margin:0px 20px 20px 30px;
+	padding:10px 10px 10px 10Px;
+  }
+  
+  #name-label, #email-label, #number-label{
+      
+      margin:60px 60px 60px 360px;
+  }
+  #sel{
+    margin:0px 20px 20px 360px;
+  }
+  #sel2{
+    margin:0px 20px 20px 120px;
+  }
+  #sel3{
+   margin:0px 20px 20px 420px;
+   font-size:20px;
+   line-height:34px;
+  }
+  #sel4{
+    display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+  }
+  input[type='textarea']{
+    
+  }
+  input[type="checkbox"]{
+  width: 20px; 
+  height: 20px; 
+ 
+}
+  #submit{
+   margin:40px 0px 0px 400px;
+     background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  border: 0px solid;
+  }
+  
+  </style>
+    
+</head>
+<body>
+<div id="head1">1</div>
+  <h1 id="title"> Survey Form </h1>
+  
+  <main id="back">
+  <p id="description"><h1>Programming Languages you know</h1></p>
+  <form id="survey-form">
+   <label id="name-label">
+    <p style="display:inline" id="red1">*</p>Name: <input type="text" id="name" placeholder="Taylor" size="30"  required /><br/><br/>
+	</label>
+	<label id="email-label"">
+	<p style="display:inline" id="red1">*</p>Email: <input type="email" id="email" placeholder="abc@gmail.com" size="50" required /><br/><br/>
+	</label>
+	<label id="number-label">
+	<p style="display:inline" id="red1">*</p>Age: &nbsp;&nbsp;  <input type="number" id="number" placeholder="0" max="75" min="0" required /> <br/><br/>
+    </label>
+	<p style="display:inline" id="red1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>Which option best describes your current role?<select id="dropdown" required>
+	                                                        <option value="" disabled selected>Select an option</option>     
+                                                         	<option value="Student">Student</option>
+															<option value="Full Time Job">Full Time Job</option>
+															<option value="Full Time Learner">Full Time Learner</option>
+															<option value="Prefer Not To Say">Prefer Not To Say</option>
+															<option value="Others">Others</option>
+													</select>		
+    <br/><br/>													
+	<label for="mfo" id="sel" >
+	<p style="display:inline" id="red1">*</p> sex:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="mfo" value="Male" checked>Male <input type="radio" name="mfo" value="Female">     Female        <input type="radio" name="mfo" value="Others"> others<br/><br/>
+    </label>
+	<label id="sel2">
+	<p style="display:inline" id="red1">*</p>Programming Languages you know:<br/>
+                                    <div id ='sel3'>                           
+     								<input type="checkbox" value="C">C<br/>
+	                                <input type="checkbox" value="C++">C++<br/>
+									<input type="checkbox" value="Java">Java<br/>
+									<input type="checkbox" value="Python">Python<br/>
+									<input type="checkbox" value="Ruby">Ruby<br/>
+									<input type="checkbox" value="Swift">Swift<br/>
+									<input type="checkbox" value="JavaScript">JavaScript<br/>
+									<input type="checkbox" value="C#">C#<br/>	  
+									</div>
+	</label>	
+	<label id="sel4">What you want to do next?&nbsp;&nbsp;&nbsp;&nbsp;</label> <textarea id="comments" class="input-field" style="height:80px;width:160px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea><br/><br/>
+	
+	<button id="submit" type="submit">Submit</button>
+  </form>
+  </main>
+</body>
+</html>
